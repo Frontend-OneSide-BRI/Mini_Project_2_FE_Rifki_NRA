@@ -1,8 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { GlobalContext } from '../store';
 
 function Home(){
+    const {images} = useContext(GlobalContext)
     return(
-        <><h1>Hello World</h1></>
+        <>
+        {console.log(images)}
+        <h1>Hello World</h1>
+        {images.map((img)=>(
+            <>
+            <p>{img.name}</p>
+            </>
+        ))}
+        </>
     )
 }
 

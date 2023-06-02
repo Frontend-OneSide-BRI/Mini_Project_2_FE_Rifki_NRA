@@ -1,12 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Router from "./router";
-
+import Home from "./views/HomePages";
+import { Routes, Route } from "react-router-dom";
+import { GlobalProvider } from "./store";
 function App() {
   return (
-    <>
-      <Router />
-    </>
+    <GlobalProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </GlobalProvider>
   );
 }
 
