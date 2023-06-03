@@ -47,7 +47,7 @@ body{
 /* Carousel */
 .carousel-item {
 
-    height: 650px;
+    height: 600px;
     width: 100%;
 }
 
@@ -100,17 +100,9 @@ body{
     .jumbotron{
         height: 350px;
         width: 70%;
-        background-color: rgba(0,0, 0, 0.5);
-        color: #fff;
-        position: absolute;
-        bottom: 100px;
-        padding: 30px;
-        text-align: center;
-        border-radius: 5px;
     }
     
     .jumbotron h1{
-        text-shadow: 5px 5px 10px blue;
         font-size: 40px;
     }
 }
@@ -119,18 +111,19 @@ body{
     .jumbotron{
         height: 350px;
         width: 90%;
-        background-color: rgba(0,0, 0, 0.5);
-        color: #fff;
-        position: absolute;
         bottom: 100px;
-        padding: 10px;
-        text-align: center;
-        border-radius: 5px;
     }
 
     .jumbotron h1{
-        text-shadow: 5px 5px 10px blue;
         font-size: 30px;
+    }
+    @media (max-width :470px) {
+        .container-swipper{
+            width: 150px !important;
+            height: 150px !important;
+            border : 3px solid #fff;
+            box-shadow: 5px 5px 10px #000;
+        }
     }
 }
 /* End Jumbotron */

@@ -6,7 +6,6 @@ const data = props.data
   return (
 
     <div className="container">
-            {console.log(data)}
       <div className="jumbotron">
         <div className="heading mb-4">
           <h1>Welcome to My Gallery</h1>
@@ -21,13 +20,13 @@ const data = props.data
             768: {
               slidesPerView: 3,
             },
-            480: {
+            350: {
               slidesPerView: 2,
             },
           }}
         >
             {data?.map((img)=>(
-                <SwiperSlide>
+                <SwiperSlide  key={img.id}>
                 <div className="container-swipper">
                 <img src={img.image} alt="" />
                 </div>
