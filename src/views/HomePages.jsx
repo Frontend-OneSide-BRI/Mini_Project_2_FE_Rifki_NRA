@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { GlobalContext } from '../store';
 import Carousel  from '../components/CarouselComponent.jsx' ;
 import Jumbotron  from '../components/JumbotronComponent' ;
+import Category from '../components/CategoryComponent';
 
 
 function Home(){
@@ -11,6 +12,11 @@ function Home(){
         <>
         <Carousel />
         <Jumbotron data = {images}/>
+        <section className='pt-3 text-center categorySection'>
+            <h1>Category</h1>
+            <hr className='centered-hr'/>
+            <Category/>
+        </section>
         </>
     )
 }
