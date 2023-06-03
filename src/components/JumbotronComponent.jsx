@@ -5,7 +5,7 @@ function Jumbotron(props) {
 const data = props.data
   return (
 
-    <div className="container">
+    <div className="container-fluid p-4">
       <div className="jumbotron">
         <div className="heading mb-4">
           <h1>Welcome to My Gallery</h1>
@@ -15,7 +15,7 @@ const data = props.data
         grabCursor
         breakpoints={{
             1000:{
-                slidesPerView: 4,
+                slidesPerView: 5,
             },
             768: {
               slidesPerView: 3,
@@ -35,7 +35,7 @@ const data = props.data
           </Swiper>
         </div>
         <div className="footer">
-            <a href="#" className="btn btn-dark">Show Gallery</a>
+            <a href="#" className="btn btn-dark fs-5 px-4">Show Gallery</a>
         </div>
       </div>
     </div>

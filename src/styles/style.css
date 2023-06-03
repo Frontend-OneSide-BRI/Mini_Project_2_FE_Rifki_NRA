@@ -33,7 +33,7 @@ body {
 
 .navbar-brand span {
   font-family: "Permanent Marker", cursive;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .navbar .nav-link {
@@ -64,7 +64,7 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-  width: 88%;
+  width: 97%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   position: absolute;
@@ -95,7 +95,7 @@ body {
 @media (max-width: 1000px) {
   .jumbotron {
     height: 350px;
-    width: 70%;
+    width: 95%;
   }
 
   .jumbotron h1 {
@@ -134,7 +134,7 @@ body {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   letter-spacing: 5px;
   color: #000;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Pacifico", cursive;
 }
 
 .img-kategori {

@@ -9,7 +9,7 @@ function Carousel() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="1500">
+          <div className="carousel-item active" data-bs-interval="3000">
             <div className="img">
               <img
                 src="assets/img/artist/slider-artis (2).jpg"
@@ -19,7 +19,7 @@ function Carousel() {
               />
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="1500">
+          <div className="carousel-item" data-bs-interval="3000">
             <div className="img">
               <img
                 src="assets/img/atlet/slider-ronaldo.jpg"
@@ -28,7 +28,7 @@ function Carousel() {
               />
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="1500">
+          <div className="carousel-item" data-bs-interval="3000">
             <div className="img">
               <img
                 src="assets/img/anime/boruto-slider.jpg"
