@@ -46,7 +46,7 @@ body{
 /* Carousel */
 .carousel-item {
 
-    height: 600px;
+    height: 650px;
     width: 100%;
 }
 
@@ -64,3 +64,16 @@ body{
 }
 /* End Carousel */
 
+/* Jumbotron */
+.jumbotron{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 100px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+/* End Jumbotron */
