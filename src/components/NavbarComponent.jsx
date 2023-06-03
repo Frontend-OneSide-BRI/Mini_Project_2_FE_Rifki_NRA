@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from "react";
 
 function Navbar() {
-  const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollDirection, setScrollDirection] = useState("up");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,12 +24,11 @@ function Navbar() {
   }, [scrollDirection]);
 
   const navbarClass = `navbar navbar-expand-lg fixed-top ${
-    scrollDirection === "down" ? "navbar-dark bg-dark" : "navbar-light bg-transparant"
+    scrollDirection === "down" ? "navbar-dark bg-dark" : "navbar-dark bg-semi-dark"
   }`;
 
   return (
     <nav className={navbarClass}>
-        {console.log(setScrollDirection)}
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Navbar
