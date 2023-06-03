@@ -11,6 +11,10 @@
 .navbar.bg-semi-dark{
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
+.navbar button{
+   text-align: left;
+}
 /* end Navbar */
 
 

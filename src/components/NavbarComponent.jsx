@@ -24,7 +24,9 @@ function Navbar() {
   }, [scrollDirection]);
 
   const navbarClass = `navbar navbar-expand-lg fixed-top ${
-    scrollDirection === "down" ? "navbar-dark bg-dark" : "navbar-dark bg-semi-dark"
+    scrollDirection === "down"
+      ? "navbar-dark bg-dark"
+      : "navbar-dark bg-semi-dark"
   }`;
 
   return (
@@ -52,9 +54,15 @@ function Navbar() {
             <a className="nav-link" href="#">
               Gallery
             </a>
-            <a className="nav-link" href="#">
+            {/*  Button modal*/}
+            <button
+              type="button"
+              className="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               Login
-            </a>
+            </button>
           </div>
         </div>
       </div>
