@@ -1,4 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
+import Icon from '../Icon.png'
 
 function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
@@ -32,8 +33,11 @@ function Navbar() {
   return (
     <nav className={navbarClass}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
+        <a className="navbar-brand d-flex" href="#">
+          <div className="icon">
+          <img src={Icon} alt=""/>
+          </div>
+          <span className="mt-2 fs-4">My Gallery</span>
         </a>
         <button
           className="navbar-toggler"
