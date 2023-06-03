@@ -9,14 +9,8 @@ function Home(){
     const {images} = useContext(GlobalContext)
     return(
         <>
-        {console.log(images)}
         <Carousel />
-        <Jumbotron />
-        {images.map((img)=>(
-            <>
-            <p>{img.name}</p>
-            </>
-        ))}
+        <Jumbotron data = {images}/>
         </>
     )
 }

@@ -27,7 +27,7 @@ function Navbar() {
   const navbarClass = `navbar navbar-expand-lg fixed-top ${
     scrollDirection === "down"
       ? "navbar-dark bg-dark"
-      : "navbar-dark bg-semi-dark"
+      : "navbar-dark bg-transparant"
   }`;
 
   return (
