@@ -12,7 +12,7 @@ function Home(){
         <>
         <Carousel />
         <Jumbotron data = {images}/>
-        <section className='pt-3 text-center categorySection'>
+        <section className='pt-2 pb-3 text-center categorySection'>
             <h1>Category</h1>
             <hr className='centered-hr'/>
             <Category/>

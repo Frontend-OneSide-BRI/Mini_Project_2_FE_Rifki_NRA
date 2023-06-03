@@ -38,7 +38,7 @@ body {
 
 .navbar .nav-link {
   letter-spacing: 1px;
-  font-size: 19px;
+  font-size: 16px;
 }
 /* end Navbar */
 
@@ -125,9 +125,6 @@ body {
 /* End Jumbotron */
 
 /* Category */
-.categorySection {
-
-}
 .categorySection h1 {
   font-size: 34px;
   font-weight: bold;

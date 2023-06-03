@@ -5,8 +5,8 @@ function Jumbotron(props) {
 const data = props.data
   return (
 
-    <div className="container-fluid p-4">
-      <div className="jumbotron">
+    <div className="container-fluid">
+      <div className="jumbotron p-4">
         <div className="heading mb-4">
           <h1>Welcome to My Gallery</h1>
         </div> 
