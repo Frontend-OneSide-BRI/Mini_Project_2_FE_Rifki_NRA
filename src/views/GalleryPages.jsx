@@ -32,9 +32,9 @@ function Gallery() {
 
   return (
     <div className="mtFix pb-5 container">
-      <div class="row mb-4 mt-3">
-        <div class="col-10 col-lg-4">
-          <div class="input-group">
+      <div className="row mb-4 mt-3">
+        <div className="col-10 col-lg-4">
+          <div className="input-group">
             <input
               className="form-control border-end-0 border"
               id="example-search-input"
@@ -42,12 +42,12 @@ function Gallery() {
               value={searchKeyword}
               onChange={handleSearch}
             />
-            <span class="input-group-append">
+            <span className="input-group-append">
               <button
-                class="btn btn-outline-dark bg-white border-start-0 border ms-n5"
+                className="btn btn-outline-dark bg-white border-start-0 border ms-n5"
                 type="button"
               >
-                <i class="fa fa-search"></i>
+                <i className="fa fa-search"></i>
               </button>
             </span>
           </div>

@@ -6,12 +6,12 @@ const data = props.data
     <>
       <div className="row">
         {data?.map((img)=>(
-                <div class="col-lg-3 col-md-4 col-sm-6" key={img.id}>
-                <div class="card mb-1 fade-in">
-                  <div class="img-listCard">
+                <div className="col-lg-3 col-md-4 col-sm-6" key={img.id}>
+                <div className="card mb-1 fade-in">
+                  <div className="img-listCard">
                     <img
                       src={img.image}
-                      class="card-img-top"
+                      className="card-img-top"
                       alt="..."
                     />
                         <div className="overlayGallery">
