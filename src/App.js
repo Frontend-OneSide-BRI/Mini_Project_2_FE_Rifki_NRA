@@ -4,6 +4,7 @@ import { GlobalProvider } from "./store";
 import Navbar from "./components/NavbarComponent";
 import Modal from "./components/ModalComponent";
 import Footer from "./components/FooterComponent";
+import Gallery from "./views/GalleryPages";
 function App() {
   return (
     <GlobalProvider>
@@ -14,12 +15,22 @@ function App() {
             <>
               <Navbar />
               <Home />
-              <Modal />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <>
+              <Navbar className="bg-dark pb-5" />
+              <Gallery />
               <Footer />
             </>
           }
         />
       </Routes>
+      <Modal />
     </GlobalProvider>
   );
 }

@@ -1,8 +1,9 @@
 import React, { Component, useState, useEffect } from "react";
-import Icon from '../Icon.png'
+import Icon from "../Icon.png";
 
 function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
+  const [currentPage, setCurrentPage] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,18 +25,37 @@ function Navbar() {
     };
   }, [scrollDirection]);
 
-  const navbarClass = `navbar navbar-expand-lg fixed-top ${
-    scrollDirection === "down"
-      ? "navbar-dark bg-dark"
-      : "navbar-dark bg-transparant"
-  }`;
+  useEffect(() => {
+    // Mendeteksi halaman saat ini
+    const path = window.location.pathname;
+    if (path === "/gallery") {
+      setCurrentPage("gallery");
+    } else {
+      setCurrentPage("home");
+    }
+  }, []);
+
+  let navbarClass = "navbar navbar-expand-lg navbar-dark fixed-top";
+
+  switch (currentPage) {
+    case "home":
+      if (scrollDirection === "down") {
+        navbarClass += " bg-dark";
+      }
+      break;
+    default:
+      navbarClass += " bg-dark";
+      break;
+  }
+
+
 
   return (
     <nav className={navbarClass}>
       <div className="container-fluid">
         <a className="navbar-brand d-flex" href="#">
           <div className="icon">
-          <img src={Icon} alt=""/>
+            <img src={Icon} alt="" />
           </div>
           <span className="mt-2 fs-4">My Gallery</span>
         </a>

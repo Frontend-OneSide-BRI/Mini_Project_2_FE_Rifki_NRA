@@ -35,7 +35,7 @@ const data = props.data
           </Swiper>
         </div>
         <div className="footer">
-            <a href="#" className="btn btn-dark fs-5 px-4">Show Gallery</a>
+            <a href="/gallery" className="btn btn-dark fs-5 px-4">Show Gallery</a>
         </div>
       </div>
     </div>
