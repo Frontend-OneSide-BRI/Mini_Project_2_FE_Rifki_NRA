@@ -18,6 +18,7 @@ const data = props.data
                             <p>{img.name}</p>
                         </div>
                   </div>
+                  <p className="card-text-mobile text-center p-1 fs-4">{img.name}</p>
                 </div>
               </div>
         ))}

@@ -44,7 +44,7 @@ function Navbar() {
       }
       break;
     default:
-      navbarClass += " bg-dark";
+      navbarClass += " bg-dark mbFix";
       break;
   }
 
