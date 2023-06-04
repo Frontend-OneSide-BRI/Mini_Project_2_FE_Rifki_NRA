@@ -1,9 +1,10 @@
 import React, { Component, useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Icon from "../Icon.png";
 
 function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
-  const [currentPage, setCurrentPage] = useState("home");
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,29 +26,19 @@ function Navbar() {
     };
   }, [scrollDirection]);
 
-  useEffect(() => {
-    // Mendeteksi halaman saat ini
-    const path = window.location.pathname;
-    if (path === "/gallery") {
-      setCurrentPage("gallery");
-    } else {
-      setCurrentPage("home");
-    }
-  }, []);
-
+  // Logic Navbar Class
   let navbarClass = "navbar navbar-expand-lg navbar-dark fixed-top";
 
-  switch (currentPage) {
-    case "home":
+  switch (location.pathname) {
+    case "/":
       if (scrollDirection === "down") {
         navbarClass += " bg-dark";
       }
       break;
     default:
-      navbarClass += " bg-dark mbFix";
+      navbarClass += " bg-dark";
       break;
   }
-
 
 
   return (
@@ -72,12 +63,22 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link active" aria-current="page" href="#">
+          <Link
+              className={`nav-link ${
+                location.pathname === "/" ? "active" : ""
+              }`}
+              to="/"
+            >
               Home
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+            <Link
+              className={`nav-link ${
+                location.pathname === "/gallery" ? "active" : ""
+              }`}
+              to="/gallery"
+            >
               Gallery
-            </a>
+            </Link>
             {/*  Button modal*/}
             <button
               type="button"
